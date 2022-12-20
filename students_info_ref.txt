@@ -1,0 +1,1 @@
+name,dob,grade,total_marks,physics,chemistry,maths
