@@ -22,13 +22,13 @@ def capture():
     student_info_to_file(name, dob, marks_physics, marks_chemistry, marks_maths)
     return render_template("cap_student_confirm.html", inp_name=name, inp_dob=dob)
 
-@app.route("/select", methods=['POST'])
-def select():
-    selection = request.form['selection']
-    if selection == 'display':
-        return display_info()
-    elif selection == 'capture':
-        return capture_student_info()
+# @app.route("/select", methods=['POST'])
+# def select():
+#     selection = request.form['selection']
+#     if selection == 'display':
+#         return display_info()
+#     elif selection == 'capture':
+#         return capture_student_info()
 
 @app.route("/display")
 def display_info():
